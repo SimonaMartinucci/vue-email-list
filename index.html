@@ -23,7 +23,7 @@
         <!-- MAIN -->
         <main>
             <div class="container">
-                <ul>
+                <ul v-if="myEmails.length === 10">
                     <li v-for="email in myEmails">{{email}}</li>
                 </ul>
             </div>

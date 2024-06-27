@@ -16,6 +16,10 @@ createApp({
                 // pusho email in array vuoto
                 this.myEmails.push(result);
             })
+            // controllo errori
+            .catch(function (error) {
+                console.log(error);
+            });
         }
     }
 }).mount('#app');
